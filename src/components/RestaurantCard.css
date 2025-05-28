@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.res-card {
+    display: flex;
+    flex-direction: column;
+  width: 200px;
+  height: 300px;
+  border: 2px solid black;
+  margin: 10px;
+}
+.image  {
+
+    height: 100px;
+    width: 300x;
+    padding: 5px;
+  
+}
+
+.res-card > h3 {
+   padding-left: 40px;
+}
+
+
+.info > h4{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px ;
+}

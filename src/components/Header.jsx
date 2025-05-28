@@ -1,5 +1,5 @@
-import React from 'react'
-import "./Header.css"
+import React from "react";
+import "./Header.css";
 export function Header() {
   return (
     <div className="header">
@@ -10,8 +10,8 @@ export function Header() {
         />
       </div>
 
-      <nav className='navbar'>
-        <ul className='list-items'>
+      <nav className="navbar">
+        <ul className="list-items">
           <li>Home</li>
           <li>Cart</li>
           <li>About</li>

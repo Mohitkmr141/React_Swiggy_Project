@@ -4,8 +4,9 @@
 }
 
 .img-logo > img{
-    height: 30px;
+    height: 50px;
     border-radius: 5px;
+
 }
 
 .header{
@@ -15,6 +16,9 @@
     align-items: center;
     background-color: rgb(177, 123, 227);
     color: paleturquoise
+    ;
+    height: 50px;
+    padding-right:20px ;
 }
 .navbar > ul {
     display: flex;
