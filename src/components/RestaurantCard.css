@@ -1,4 +1,4 @@
-* {
+/* * {
   padding: 0;
   margin: 0;
 }
@@ -23,10 +23,37 @@
 }
 
 
-.info > h4{
+.info{
     margin: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 10px ;
+  
+} */
+
+
+.res-card {
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  height: 300px;
+  width: 200px;
+  background-color: #f0f0f0;
+  color: chartreuse;
+}
+
+.res-card :hover {
+  cursor: pointer;
+}
+.res-logo {
+  padding: 5px;
+  width: 150px;
+}
+.res-container {
+  background-color: beige;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }

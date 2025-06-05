@@ -1,17 +1,26 @@
+
 import React from "react";
 import "./RestaurantCard.css";
-function RestaurantCard() {
-  return (
-    <div className="res-card">
 
-       <img className = "image" src="https://bcassetcdn.com/public/blog/wp-content/uploads/2021/10/21194211/Burger-King.png"/>
-      <h3>Burger King</h3>
-    
-    <div className="info">
-      <h4>Burgers, Fast Foods , Non-Veg , South Indian </h4>
-      <h4>4.4 </h4>
-      <h4>30 minutes</h4>
-    </div>
+function RestaurantCard({ restaurant }) {
+  // Destructure the individual restaurant object from props
+  const { id, name, cuisines, price, averageRating, image } = restaurant;
+
+  return (
+    <div className="res-card" key={id}>
+      <img
+        className="res-logo"
+        alt={`${name} restaurant`}
+        src={image} // Use the unique image from data
+      />
+      <h2>{name}</h2> {/* Added restaurant name */}
+      <div className="res-details">
+        <p>Cuisines: {cuisines.join(", ")}</p> {/* Properly display array */}
+        <div className="res-meta">
+          <span>⭐ {averageRating}</span>
+          <span>{price}</span>
+        </div>
+      </div>
     </div>
   );
 }
